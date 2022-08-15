@@ -34,7 +34,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(cors())
 
-app.get("/", async(req, res)=>{
+app.get("/", async(request, response)=>{
     try {
         response.render('index.ejs')
     }
